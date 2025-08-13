@@ -21,7 +21,8 @@ Built using **HTML**, **CSS**, and **JavaScript** with weather data fetched from
 ---
 
 ## 📷 Screenshots
-![Weather App Screenshot](Screenshot%202025-08-13%20145549.png)
+![Weather App Screenshot]<img width="1919" height="971" alt="Screenshot 2025-08-13 145549" src="https://github.com/user-attachments/assets/343164da-2945-4aa4-be36-dc330555abe6" />
+
 
 ---
 
