@@ -1,0 +1,34 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Weather App</title>
+    <meta name="description" content="Check real-time weather in any city with the Weather App.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+</head>
+<body class="bg-[url('images/bg_image.jpg')] bg-cover bg-no-repeat min-h-screen p-5 flex flex-col items-center gap-6">
+    <div class="flex items-center">
+        <div class="text-white text-2xl font-bold">Weather App</div>
+        <img src="{% static 'images/116.png' %}" alt="">
+    </div>
+    <form action="" class="flex items-center gap-3">
+        <input name="city" type="text" class="bg-white/20 px-6 py-2 rounded-full p-3 placeholder:text-white/60" placeholder="Enter city name">
+        <button><i class='bxr  bx-search text-white text-2xl bg-white/20 p-3 rounded-full'  ></i> </button>
+    </form>
+    <div class="flex p-3 bg-white/20 justify-between w-[60%] rounded-2xl">
+        <div class="flex flex-col text-white">
+            <p class="font-bold text-2xl">{{temperature}}&deg;C</p>
+            <p class="font-semibold text-sm">Now</p>
+            <p class="font-semibold mt-3">{{city}}, {{country}}</p>
+        </div>
+        <img class="h-23" src="{% static 'images/113.png' %}" alt="">
+    </div>
+    {% if error %}
+    <p class="text-red-500">{{ error }}</p>
+{% endif %}
+
+</body>
+</html>
